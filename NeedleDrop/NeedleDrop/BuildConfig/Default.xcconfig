@@ -1,0 +1,22 @@
+//
+//  Keys.xcconfig
+//  NeedleDrop
+//
+//  Created by Jodi on 4/14/19.
+//  Copyright © 2019 Jhoom. All rights reserved.
+//
+// TODO - do I need this?
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+DEVELOPER_PRIVATE_KEY = """
+-----BEGIN PRIVATE KEY-----
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgALrOl2U6uipXpc7n
+cBYZyRoLJrm+QiS7hmpiyGaaaMqgCgYIKoZIzj0DAQehRANCAARFKNs6ow5TLh2K
+KaYOlona699ATJfp4nvXgUu9b0LG90j+fGdZnfPBk051M/yqty2GfVmJ0xegz12e
+t5QjQyOM
+-----END PRIVATE KEY-----
+"""
+KEY_ID = "36QSP8UW8S"
+TEAM_ID = "7825EJNLSG"

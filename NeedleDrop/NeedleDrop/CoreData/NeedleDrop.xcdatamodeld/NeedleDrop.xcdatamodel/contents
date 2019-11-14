@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Playlist" representedClassName="Playlist" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="orderIndex" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <relationship name="songs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Song" inverseName="playlists" inverseEntity="Song"/>
+    </entity>
+    <entity name="SelectedPlaylist" representedClassName="SelectedPlaylist" syncable="YES" codeGenerationType="class">
+        <relationship name="playlist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Playlist"/>
+    </entity>
+    <entity name="Song" representedClassName="Song" syncable="YES" codeGenerationType="class">
+        <attribute name="albumTitle" optional="YES" attributeType="String"/>
+        <attribute name="albumTrackNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="artist" optional="YES" attributeType="String"/>
+        <attribute name="composer" optional="YES" attributeType="String"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="persistentID" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="playlists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Playlist" inverseName="songs" inverseEntity="Playlist"/>
+    </entity>
+    <elements>
+        <element name="Playlist" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="SelectedPlaylist" positionX="-54" positionY="54" width="128" height="58"/>
+        <element name="Song" positionX="-63" positionY="0" width="128" height="178"/>
+    </elements>
+</model>

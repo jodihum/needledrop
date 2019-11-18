@@ -6,3 +6,5 @@ I am very happy to have suggestions on how to improve this.
 
 One thing I am not too happy with is having to import SwiftUI into some of my View Models because of the ViewBuilders.  If anyone has better suggestions please let me know.  Thanks.
 
+Please note, this app will only work if you have non-DRM-protected songs in the music library on your phone. 
+
